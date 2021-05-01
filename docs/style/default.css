@@ -1,54 +1,17 @@
-
-
 body {
     padding-top:60px;
     margin: auto;
 }
 
-.fake-table > div, ul.spread {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    list-style-type: none;
-}
-
-.story {
-    padding-top: 15px;
-}
-
-ul.spread {
-    padding-left: 0;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.fake-table > div > div, ul.spread li {
-    margin: 15px;
-    flex-grow: 1;
-    flex-basis: 0;
-}
 
 /* choose a light or dark theme to add to the body tag. */
 .dark-theme {
     background-color: #181414;
     color: #fcfbfb;   
 }
-
 .light-theme {
     background-color: white;
     color: black;    
-}
-
-.beige-theme {
-    background-color: #f9f1e6;
-    color: black;    
-}
-
-img {
-    max-height: 100vh;
-    max-width: 100%;
-    display: block;
-    margin: 0 auto;
 }
 
 .container {
@@ -56,6 +19,13 @@ img {
 }
 
 /* ******** */
+
+.image {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+
 
 
 /*
@@ -66,7 +36,6 @@ super-font
 .label
 .label-text
 .credit
-
 sub-font
 .date
 .body-text
@@ -75,16 +44,17 @@ sub-font
 
 
 
-.super-font, h1, h2, h3, .label + p {
-    font-family: 'Roboto Condensed', sans-serif;
+.super-font {
+    font-family: ‘Oxygen’, sans-serif;
+}
+.sub-font {
+    font-family: 'Muli', serif;
 }
 
-.sub-font, p, ul, li {
-    font-family: 'Lora', serif;
-}
 
-.headline, h1 {
-    font-size: 3rem;
+
+.headline {
+    font-size: 3.5rem;
     line-height: 0.9;
     margin-bottom: 0.25rem;
     margin-top: 1rem;
@@ -94,7 +64,8 @@ sub-font
 .body-text {
     font-size: 1.25rem;
     line-height: 1.6;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 3.75rem;
 
 }
 
@@ -123,19 +94,11 @@ sub-font
     font-style: italic;
 }
 
-.intro {
-    line-height: 1;
-    margin-top: 2rem;
-    font-size: 1.25rem;
-    font-weight: 400;
-    font-style: italic;
-}
-
-.subhead, h2 {
-    font-size: 2rem;
+.subhead {
+    font-size: 1.75rem;
     line-height: 0.9;
     margin-bottom: 0.5rem;
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
     font-weight: 700;
 }
 
@@ -147,25 +110,62 @@ sub-font
     font-weight: 700;
 }
 
-.label-text, .label + p {
+.label-text {
     font-size: 1.25rem;
     line-height: 1.25;
     margin-bottom: 0.5rem;
     font-weight: 400;
 }
 
-.note, p.img + p {
+.note {
     font-size: 0.85rem;
     line-height: 1.5;
     margin-top: 0.5rem;
     margin-bottom: 1.25rem;
     font-weight: 400;
 }
-
 .caption  {
     font-size: 1rem;
     line-height: 1.2;
     margin-top: 0.5rem;
     margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.handle  {
+    font-size: 1.25rem;
+    line-height: 0.75;
+    margin-top: 1.75rem;
+    font-weight: 400;
+    color: black !important;
+}
+
+.rule {
+    border-style: solid;
+    border-top: 1px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    border-color: darkgrey;
+}
+
+.section {
+    font-size: 1.25rem;
+    line-height: 0.9;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.link {
+    color: black !important;
+}
+
+.footer  {
+    font-size: 1rem;
+    line-height: 0.75;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     font-weight: 400;
 }
