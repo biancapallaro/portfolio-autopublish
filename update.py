@@ -34,7 +34,7 @@ shutil.copytree("style", "docs/style")
 def to_base64(url):
     response = requests.get(url)
     encoded = base64.b64encode(response.content).decode("ascii")
-    return f"data:{response.headers['Content-Type']}; base64,{encoded}"
+    return f"data:{response.headers['Content-Type']};base64,{encoded}"
 
 def to_text(element):
     if element.name is None:
